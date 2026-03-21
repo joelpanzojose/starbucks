@@ -53,7 +53,7 @@ ul li a {
     transition: all 0.3s ease;
 }
 
-.btn-default {
+.btn-desktop-contatar{
     display: none;
 }
 
@@ -67,9 +67,10 @@ ul li a {
         font-weight: 500;
         color: var(--color-neutral-8);
     }
-    .btn-default {
-        display: inline-block;
-    }
+    .btn-desktop-contatar{
+    display: block;
+}
+
     ul {
         display: flex;
         position: static;

@@ -24,10 +24,9 @@ export function Header() {
                 </ul>
 
 
-                <a href="mailto:joelpanzojose835@gmail.com" className="btn btn-default">
+                <a href="mailto:joelpanzojose835@gmail.com" className="btn btn-default btn-desktop-contatar">
                     Contato
                 </a>
-
             </nav>
 
 
