@@ -13,6 +13,8 @@
   --color-primary-0: #34815d;
   --color-primary-1: #2c6e4f;
   --color-primary-2: #245c42; 
+
+  --color-secondary-0: #f5c518;
   body {
   font-family: 'Poppins', sans-serif;
 }

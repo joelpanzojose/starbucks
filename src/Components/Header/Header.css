@@ -1,98 +1,88 @@
-
-header {
+.header {
     background-color: var(--color-neutral-1);
-
     padding: 12px 4%;
     position: sticky;
     top: 0;
     z-index: 1;
+}
 
-    .navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.logo {
+    width: 180px;
+}
 
-        .logo {
-            width: 180px;
-        }
+.btn-mobile {
+    font-size: 1.5rem;
+    color: var(--color-neutral-8);
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
 
-        .btn-mobile {
-            font-size: 1.5rem;
-            color: var(--color-neutral-8);
-            background-color: transparent;
-            transition: background-color 0.3s ease;
-            border: none;
-            cursor: pointer;
-            display: block;
-        }
+.nav-desktop {
+    display: none;
+}
 
-       
-        }
+ul {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    width: 100%;
+    left: -30px;
+    position: absolute;
+    top: 80px;
+    padding-bottom: 10px;
+    background-color: var(--color-neutral-1);
+    color: var(--color-neutral-8);
+}
 
-        ul {
-            display: none;
-            list-style: none;
-            flex-direction: column;
-            align-items: center;
-            font-weight: 500;
-            width: 100%;
-            left: -30px;
-            position: absolute;
-            top: 80px;
+ul.show {
+    display: flex;
+}
 
-            padding-bottom: 10px;
-            background-color: var(--color-neutral-1);
+ul li a {
+    transition: all 0.3s ease;
+}
 
-            color: var(--color-neutral-8);
-
-            &.show {
-                display: flex;
-
-            }
-
-            li a {
-                transition: all 0.3s ease;
-            }
-        }
-
-        .btn-default {
-            display: none;
-
-
-        }
-    }
+.btn-default {
+    display: none;
 }
 
 @media (min-width: 769px) {
-    header {
-
-        .navbar {
-            .btn-mobile {
-                display: none;
-            }
-
-            .btn-default {
-                display: block;
-            }
-
-            ul {
-                display: flex;
-                position: static;
-                flex-direction: row;
-                width: auto;
-                padding: 0;
-
-                li a {
-                    margin: 0 15px;
-                    color: var(--color-neutral-8);
-                    transition: all 0.3s ease;
-
-                    &:hover {
-                        color: var(--color-primary-1);
-                    }
-                }
-            }
-        }
+    .btn-mobile {
+        display: none;
+    }
+    .nav-desktop {
+        display: block;
+        gap: 30px;
+        font-weight: 500;
+        color: var(--color-neutral-8);
+    }
+    .btn-default {
+        display: inline-block;
+    }
+    ul {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+    }
+    ul li a {
+        margin: 0 15px;
+        color: var(--color-neutral-8);
+        transition: all 0.3s ease;
+    }
+    ul li a:hover {
+        color: var(--color-primary-1);
     }
 }

@@ -1,6 +1,6 @@
 .container{
-    background-image: url('/src/assets/images/background-mobile.png');
-    background-size: cover;
+    /* background-image: url('/src/assets/images/background-mobile.png');
+    background-size: cover; */
     height: 100vh;
 
     display: flex;

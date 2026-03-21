@@ -8,8 +8,11 @@ function App() {
     <>
       
           <Header />
-          <Conteudo />
-          <Trending />
+          <main>
+               <Conteudo />
+               <Trending />
+          </main>
+         
 
     </>
   )

@@ -23,6 +23,7 @@ export function Header() {
                     <li><a href="/novidades">Novidades</a></li>
                 </ul>
 
+
                 <a href="mailto:joelpanzojose835@gmail.com" className="btn btn-default">
                     Contato
                 </a>

@@ -7,7 +7,7 @@ export function Card(Props: any) {
 
             
             <div className="trending-rate">
-                <i className="fa fa-star"></i>
+               5 <i className="fa fa-star"></i>
             </div>
 
             <p className='tranding-description'>{Props.nome} <span>{Props.sabor}</span></p>

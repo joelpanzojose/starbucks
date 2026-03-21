@@ -4,15 +4,31 @@
     align-items: center;
     border-radius: 8px;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    box-shadow: 0 4px 8px #00000059;
+    width: 350px;
+    position: relative;
     /* margin-left: 40px; */
 
     .card-image{
-        width: 50%;
+        width: clamp(300px, 5vw, 600px);
         height: auto;
         object-fit: contain;
     }
+
+        .trending-rate{
+            background-color: var(--color-neutral-0);
+            position: absolute;
+            right: 80px;
+            bottom: 70px;
+            padding: 5px 10px;
+            border-radius: 5px;
+
+            i{
+                color: var(--color-secondary-0);
+            }
+        }
+
+
          p{
             font-size: 1.2rem;
             font-weight: semi-bold;
