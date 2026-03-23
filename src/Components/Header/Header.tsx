@@ -17,10 +17,10 @@ export function Header() {
                 {/* Botão Menu */}
 
                 <ul className={`nav-links ${isMenuOpen ? 'show' : ''}`}>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/em-alta">Em Alta</a></li>
-                    <li><a href="/sobre">Sobre nós</a></li>
-                    <li><a href="/novidades">Novidades</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#em-alta">Em Alta</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
                 </ul>
 
 

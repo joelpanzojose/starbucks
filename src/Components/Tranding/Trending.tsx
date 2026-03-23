@@ -6,7 +6,7 @@ import './Trending.css';
 export function Trending() {
     return (
         <div className='container-trending'>
-            <h2 className='trending-title'>Em Alta</h2>
+            <h2 className='trending-title title'>Em Alta</h2>
 
             <div className="trending-cards">
                 <Card

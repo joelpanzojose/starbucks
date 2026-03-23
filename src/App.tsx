@@ -1,7 +1,9 @@
 import './App.css'
 import { Header } from './Components/Header/Header';
 import { Conteudo } from './Components/Conteudo/conteudo';
-import { Trending } from './Components/Tranding/Trending';  
+import { Trending } from './Components/Tranding/Trending'; 
+import { Sobre } from './Components/Sobre/Sobre';
+import { Produtos } from './Components/Produtos/Produtos';
 function App() {
 
   return (
@@ -9,8 +11,22 @@ function App() {
       
           <Header />
           <main>
+            <section>
                <Conteudo />
-               <Trending />
+            </section>
+            
+            <section>
+                <Trending />
+            </section>
+              
+              <section>
+                 <Sobre />
+              </section>
+
+              <section>
+                 <Produtos />
+              </section>
+              
           </main>
          
 

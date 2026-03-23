@@ -1,0 +1,80 @@
+:root{
+    --color-card-image-0: #9AA681;
+   
+}
+.produtos{
+    width: 100%;
+    height: 100vh;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+
+        .card-boxes{
+            width: 340px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 0px 10px;
+            box-shadow: 0 4px 8px #00000059;
+            background-color: var(--color-neutral-3);
+            background-image: url(/src/assets/images/products/background.png);
+            background-size: cover;
+            background-position: center;
+
+                .card-part-image{
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 12px;
+                    position: relative;
+
+                        .image{
+                            width: clamp(130px, 5vw, 600px);
+                            height: auto;
+                            object-fit: contain;
+                            box-shadow: 0 14px 8px #00000059;
+                            background-color: var(--color-neutral-1);
+                            border-radius: 10px;
+                            position: relative;
+                            left: -20px;
+                        }
+                }
+                .cardproduto-description{
+                    font-size: 0.8rem;
+                }
+                .pedir{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 40px;
+                    background-color: var(--color-neutral-0);
+                    color: var(--color-primary-0);
+                    font-weight: 800;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+        }
+
+        .preco-e-ponto{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 10px;
+
+               p{
+                color: var(--color-neutral-7);
+                font-weight: 800;
+               }
+
+                i{
+                    color: var(--color-secondary-0);
+                    font-size: 20px;
+                }
+        }
+}
